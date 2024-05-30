@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 1sec;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(135deg,rgb(53, 124, 216),rgb(121, 33, 148),rgb(53, 124, 216));
+
+}
+.header a{
+    text-decoration: none;
+}
+.header {
+    background-image: linear-gradient(135deg, rgb(4, 4, 139), rgb(117, 54, 218), rgb(238, 29, 63), purple);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.ipl-logo {
+    width: 90px;
+}
+.ipl-logo img {
+    width: 100%;
+}
+.header-head {
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgb(4, 4, 139);
+    text-align: -webkit-center;
+}
+.right-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-area {
+    align-items: center;
+    display: flex;
+    margin-right: 30px;
+}
+.search-box {
+    padding: 8px 8px;
+    background-color: rgb(217, 217, 235);
+    color: rgb(250, 246, 246);
+    border-radius: 15px;
+    border: none;
+    width: 140px;
+    color: #103670;
+}
+.search-img {
+    font-size: 25px;
+    color: white;
+    padding-left: 5px;
+}
+.add-button {
+    padding: 5px;
+    border: none;
+    background-image: linear-gradient(120deg, blue, rgb(214, 42, 171));
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+}
+.main-containor{
+    position: relative;
+}
+/* trams grid section */
+
+.teams-grid {
+    margin: 0;
+    padding: 0px 40px 6px 40px;
+    background-size: cover;
+    background-position: top 55% right 0;
+    display: flex;
+    margin: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.teams-containor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.team-card {
+    display: flex;
+    height: 210px;
+    width: 210px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #103670;
+    border-radius: 12px;
+    margin: 4px;
+    margin-top: 30px;
+}
+.team-img {
+    width: 150px
+}
+.team-img img {
+    width: 100%;
+}
+.card-team-details {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: wheat;
+    padding: 5px;
+}
+.card-team-details h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: -webkit-center;
+}
+                                   /* team details */
+.team-details{
+    margin: 0;
+    padding: 50px 30px;
+    background-image: url(https://www.iplt20.com/assets/images//teams-new-landing-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.team-details a{
+    text-decoration: none;
+}
+.name-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.name-logo .team-name{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 3px 3px 5px darkblue;
+    text-align: -webkit-center;
+}
+.team-logo{
+    padding: 2px;
+    border-radius: 50%;
+    width: 42px;
+    background-color: #c2f7f2;
+    margin-left: 30px;
+}
+.team-other-details{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.top-players{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, purple, blue, purple);
+}
+.top-batter{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.top-bowler{
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.other-count{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, purple, blue, purple);
+}
+.tropies-count{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.players-count{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+/* players details */
+
+.players-containor {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.player-card{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url(https://www.iplt20.com/assets/img/auctiontop.jpg);
+    object-fit: cover;
+    margin-bottom: 20PX;
+}
+.player-img{
+    width: 180px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.player-img img{
+    width: 100%;
+    height: 200px;
+    transition: 0.3s;
+    object-fit: cover;
+}
+.player-img:hover img{
+    transform: scale(1.05);
+}
+.player-description{
+    background-image: url(https://wallpapercave.com/wp/wp3222593.jpg);
+    border-radius: 0 0 15px 15px;
+    text-transform: uppercase;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+}
+.player-name{
+    font-size: 18px;
+    text-align: -webkit-center;
+    font-weight: 700;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.player-others{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.player-roll{
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.player-price{
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.player-team{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+.team-details button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #103670;
+    background-color: #c2f7f2;
+    cursor: pointer;
+}
+.csk-team-details,.rcb-team-details,.dd-team-details,.gt-team-details,.kkr-team-details,.lsg-team-details,.mi-team-details,.pk-team-details,.rr-team-details,.srh-team-details{
+    display: none;
+}
+                               /* player details page */
+.about-player-details{
+    background-image: url(https://www.hdwallpapers.in/download/material_design_paper_texture_blue_lines_creative_background_hd_abstract-HD.jpg);
+    margin: 2rem 10rem 3rem 10rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 30%;
+    display: flex;
+    justify-content: space-between;
+    height: 78vh;
+    padding-right: 30px;
+}
+.player-img-containor{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 430px;
+    object-fit: cover;
+}
+.single-player-card{
+    width: 400px;
+}
+.single-player-card img{
+    width: 100%; 
+}
+.player-details-containor{
+    position: relative;
+    margin: 80px 1px;
+}
+.single-palyer-name{
+    padding: 13px  40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d1e6e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #646665;
+}
+.single-palyer-name h4{
+    color: rgb(32, 31, 31);
+}
+.single-player-price{
+    padding: 13px  70px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d1e6e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #646665;
+}
+.single-player-price h4{
+    color: rgb(32, 31, 31);
+}
+.single-player-role{
+    padding: 13px  35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d1e6e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #646665;
+}
+.single-player-role h4{
+    color: rgb(32, 31, 31);
+}
+.single-player-team{
+    padding: 13px  70px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d1e6e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #646665;
+}
+.single-player-team h4{
+    color: rgb(32, 31, 31);
+}
+.about-flex-one{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 40vw;
+    margin-bottom: 80px;
+}
+.about-flex-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    width: 40vw;
+}
+  /* Adding new plyers part */
+.add-players-containor{
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    background-color: rgb(239, 224, 245);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: 1s;
+}
+.close-is-close{
+    right: -100%;
+    position: fixed;
+}
+.add-player-header{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0px 2px  5px grey;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: #511285;
+}
+.add-player-header h4{
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(255, 254, 254);
+}
+.add-players-containor-close{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border: 1px solid rgb(233, 72, 72);
+    border-radius: 8px;
+    background-color: rgb(245, 221, 221);
+    padding: 3px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    color: red;
+}
+.add-players-card-containor{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    gap: 20px;
+    overflow-y: scroll;
+}
+.add-player-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+.add-player-card-div{
+    border: 1px solid #103670;
+    border-radius: 13px;
+    object-fit: cover;
+    width: 90px;
+    background-color: #e4ecf8;
+}
+.add-player-card-div img{
+    width: 100%;
+    height: 100px;
+    border-radius: 13px;
+    padding-bottom: -5px;
+}
+.add-player-detials{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-player-name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.add-player-roll{
+    font-size: 14px;
+    font-weight: 600;
+}
+.add-player-price{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+}
+.add-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+}
+.add-team-input{
+    width: 70px;
+    border-radius: 8px;
+    border: 1px solid #103670;
+    padding: 5px;
+}
+.add-player-icon{
+    background-color: rgb(178, 177, 185);
+    width: 30px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 70px;
+        padding: 0px 10px;
+    }
+    .ipl-logo {
+        width: 50px;
+    }
+    .header-head {
+        font-size: 18px;
+    }
+    .right-head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .search-area {
+        align-items: center;
+        display: flex;
+        margin-right: 10px;
+    }
+    .search-box {
+        padding: 4px 4px;
+        width: 80px;
+        font-size: 12px;
+    }
+    .search-img {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .add-button {
+        padding: 3px;
+        border-radius: 13px;
+        font-size: 12px;
+    }
+    .teams-containor {
+        gap: 20px;
+    }
+    .team-card {
+        height: 160px;
+        width: 150px;
+        margin: 4px;
+        margin-top: 20px;
+    }
+    .team-img {
+        width: 100px
+    }
+    .card-team-details h3 {
+        font-size: 12px;
+    }
+    .team-details{
+        padding: 20px 10px;
+    }
+    .name-logo .team-name{
+        font-size: 20px;
+    }
+    .team-other-details{
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .top-players{
+        padding: 7px;
+    }
+    .top-batter{
+        font-size: 12px;
+    }
+    .top-bowler{
+        font-size: 12px;
+    }
+    .other-count{
+        padding: 7px;
+   }
+    .tropies-count{
+        font-size: 12px;
+    }
+    .players-count{
+        font-size: 12px;
+    }
+    .players-containor {
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .player-card{
+        width: 180px;
+    }
+    .player-img{
+        width: 160px;
+    }
+    .player-img img{
+        height: 170px;
+    }
+    .player-img:hover img{
+        transform: scale(1.05);
+    }
+    .player-description{
+        height: 90px;
+    }
+    .player-name{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .team-details button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    .add-players-containor{
+        width: 350px;
+    }
+    .add-player-header{
+        padding-top: 15px;
+    }
+    .add-player-header h4{
+        font-size: 20px;
+    }
+    .add-players-containor-close{
+        top: 13px;
+        font-size: 16px;
+    }
+    .add-players-card-containor{
+        padding: 10px;
+    }
+    .add-player-card-div{
+        width: 80px;
+    }
+    .add-player-card-div img{
+        height: 80px;
+    }
+    .add-player-name{
+        font-size: 14px;
+    }
+    .add-player-roll{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .add-player-price{
+        font-size: 12px;
+        font-weight: 500;
+        gap: 5px;
+    }
+    .add-area{
+        gap: 7px;
+    }
+    .add-team-input{
+        width: 60px;
+        font-size: 12px;
+        padding: 4px;
+    }
+    .add-player-icon{
+        width: 30px;
+        font-size: 18px;
+    }
+    .about-player-details{
+        margin:  10px;
+        height: 100%;
+        flex-direction: column;
+    }
+    .player-img-containor{
+        margin: auto;
+    }
+    .single-player-card{
+        width: 300px;
+    }
+    .single-player-sub-name{
+        display: none;
+    }
+    .player-details-containor{
+        position: relative;
+        margin: 0px;
+    }
+    .single-palyer-name{
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .single-player-price{
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .single-player-role{
+        padding: 10px 20px;
+        margin-top: -50px;
+    }
+    .single-player-team{
+        padding: 10px 20px;
+        margin-top: -50px;
+    }
+    .about-flex-one{
+        width: 80%;
+    }
+    .about-flex-two{
+        width: 80%;
+    }
+}
+
+.teams-grid-none{
+    display: none;
+}
+
+.team-details-containor-section-none{
+    display: none;
+}
+
+.about-player-details-none{
+    display: none;
+}
